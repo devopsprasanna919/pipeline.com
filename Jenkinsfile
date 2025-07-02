@@ -7,11 +7,13 @@ pipeline {
             }
         }
         stage ('groovystage') {
-            script{
+            steps{
+                script{
                    // i want to define variable
                 // def variablename = "value"
                 defcourse ="k8s"
                 println("Thanks for enrolling {course} course")
+            }
 
             }
         } 

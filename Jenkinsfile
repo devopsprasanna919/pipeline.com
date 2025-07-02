@@ -3,10 +3,20 @@ pipeline {
     stages {
         stage ('build') {
             steps {
-                echo "** build from scm"
+                echo "** coming from github repo"
             }
         }
-        
+        stage ('groovystage') {
+            script{
+                   // i want to define variable
+                // def variablename = "value"
+                defcourse ="k8s"
+                println("Thanks for enrolling {course} course")
+
+            }
+        } 
         
     }
 }
+
+${coures}, ${env.course}, ${params.course}

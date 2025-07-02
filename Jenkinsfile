@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage ('build') {
             steps {
-                echo "** coming from github repo"
+                echo "** build from scm"
             }
         }
         

@@ -19,4 +19,4 @@ pipeline {
     }
 }
 
-${coures}, ${env.course}, ${params.course}
+// ${coures}, ${env.course}, ${params.course}

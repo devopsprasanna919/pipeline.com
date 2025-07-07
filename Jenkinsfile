@@ -1,16 +1,13 @@
 pipeline {
     agent {
-        label 'jenkinsslave'
+        label "jenkinsslave"
     }
-    stages{
-        stage ('build') {
-            steps{
-                timeout (time:5, unit:'SECONDS') {
-                }
-                echo " sleep for 30 seconds****"
-                sleep 30
+    stages {
+        stage ("maven") {
+            steps {
+                echo ('hello welocome to maven version')
+                sh "mvn --version"
             }
-            
         }
     }
 }

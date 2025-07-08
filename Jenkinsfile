@@ -3,7 +3,7 @@ pipeline {
         label 'jenkinsslave'
     }
     tools {
-        maven 'maven-version'
+        maven 'maven-3.8.9'
     }
     stages {
         stage ("maven") {

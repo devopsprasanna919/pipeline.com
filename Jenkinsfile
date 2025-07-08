@@ -1,7 +1,9 @@
 pipeline {
-    agent any
+    agent {
+        label 'jenkinsslave'
+    }
     tools {
-        maven 'maven_autoinstaller'
+        maven 'maven-3.8.9'
     }
     stages {
         stage ("maven") {
